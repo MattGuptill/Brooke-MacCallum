@@ -1,0 +1,479 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: rgb(221 142 117); */
+    width: 100%;
+    margin: 0;
+}
+
+html {
+    font-family: 'Noto Rashi Hebrew', serif;
+    color: #1f1f1f
+}
+
+/* navbar */
+.nav-wrapper {
+    margin: 0;
+    background-color: rgb(238 230 222);
+    color: #353535;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    height: 5rem;
+    
+}
+
+.nav-con h1 {
+    margin-left: 3rem;
+    font-size: 40px;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    width: 25%;
+    margin-right: 2rem;
+}
+
+.nav-items a:hover {
+    color:rgb(190 132 94);
+    transition: color 150ms linear;
+}
+
+a {
+    color: #353535;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.mobile-nav {
+    display: none;
+
+}
+
+/* main */
+
+/* main banner */
+.main-banner-wrapper {
+    display: block;
+    height: 650px;
+    width: 100%;
+    position: relative;
+    top: 5rem;
+}
+
+.main-banner {
+    background-image: url(./photos/background_img.jpeg);
+    background-size: contain;
+    background-repeat: none;
+    display: flex;
+    height: 100%;
+    color: #1f1f1f;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-family: 'Satisfy', cursive;
+}
+
+/* about banner */
+
+.about-banner-wrapper {
+    background-image: url(./photos/arches\ \(1\).png);
+    background-color: rgb(221 142 117);
+    height: 700px;
+  
+    position: relative;
+    top: 3rem;
+}
+
+.about-banner {
+    display: flex;
+    justify-content: space-between;
+    
+    height: 700px;
+    flex-shrink: 1;
+}
+
+/* about photos  */
+.about-photo-con {
+    width: 50%;
+
+}
+
+.banner-photo-1 {
+    width: 450px;
+    height: 550px;
+    position: absolute;
+    left: 11rem;
+    top: 8rem;
+    z-index: 3;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    flex-shrink: 1;
+}
+
+.banner-photo-2 {
+    width: 375px;
+    height: 475px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    z-index: 2;
+    flex-shrink: 1;
+}
+
+.border-box-1 {
+    border: solid 3px rgb(182 89 76);
+    width: 700px;
+    height: 650px;
+    position: absolute;
+    z-index: 1;
+    left: -13rem;
+    top: 1rem;
+    flex-shrink: 1;
+}
+
+.about-photo-con h2 {
+    position: absolute;
+    z-index: 4;
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+    color:rgb(238 230 222);
+    opacity: .85;
+    top: 10rem;
+    left: 7rem;
+    flex-shrink: 1;
+}
+
+/* about text  */
+
+.about-text {
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 2rem;
+    right: 3rem;
+    text-align: center;
+    margin: auto 4rem;
+}
+
+.about-text h2 {
+    font-size: 3rem;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 12px;
+}
+
+.about-text p {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* pricing banner */
+
+.pricing-banner-wrapper {
+    background-image: url(./photos/arches.png);
+    background-color: rgb(55 81 77);
+    height: 700px;
+    width: 100%;
+}
+
+.pricing-banner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.pricing-link {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    margin-left: 7rem;
+    width: 500px;
+}
+
+.pricing-link h2 {
+    font-size: 3rem;
+    font-family: 'Courgette', cursive;
+    color: black;
+}
+
+.pricing-link a {
+    width: 18rem;
+    align-self: center;
+}
+
+button:hover {
+    background-color: rgb(190 132 94);
+    transition: background-color 100ms linear;
+}
+
+.pricing-photos {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 675px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.pricing-photo-1, .pricing-photo-2, .pricing-photo-3 {
+    width: 300px;
+    height: 350px;
+}
+
+.pricing-photo-1 {
+    z-index: 4;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    position: relative;
+    left: 6rem;
+    top: 1rem;
+}
+
+.pricing-photo-2 {
+    z-index: 3;
+    top: 9rem;
+    left: 1rem;
+    position: relative;
+    border-radius: 5%;
+}
+
+.pricing-photo-3 {
+    z-index: 2;
+    bottom: 6.5rem;
+    right: 22rem;
+    position: relative; 
+}
+
+.border-box-2 {
+    border: solid 3px rgb(190 132 94);
+    width: 675px;
+    height: 540px;
+    z-index: 1;
+    position: absolute;
+    left: 2rem;
+    top: 6rem;
+}
+
+/* extra banner */
+.extra-banner {
+    background-image: url(./photos/background_img.jpeg);
+    background-size: contain;
+    height: 400px;
+}
+
+/* booking banner */
+.booking-banner-wrapper {
+    background-color:  rgb(190 132 94);
+    background-image: url(./photos/arches.png);
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking-banner {
+    height: 100%;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booking-banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.booking-banner img {
+    height: 350px;
+    width: 300px;
+}
+
+button {
+    width: 17rem;
+    height: 4.5rem;
+    font-size: 2rem;
+    background-color: rgb(238 230 222);
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+/* portfolio banner */
+.portfolio-banner-wrapper {
+    height: 500px;
+    width: 100%;
+    background-color: rgb(144 174 178);
+    background-image: url(./photos/arches.png);
+    overflow: hidden;
+}
+
+.portfolio-banner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    top: 2rem;
+    z-index: 2;
+}
+
+.portfolio-con h3 {
+    background-color:rgb(238 230 222);
+    padding: 10px 3rem;
+    position: relative;
+    top: 4.5rem;
+    left: 4rem;
+    z-index: 3;
+}
+
+.port-photo {
+    height: 300px;
+    width: 250px;
+    transition: all 200ms;
+    
+}
+
+.border-box-3 {
+    width: 900px;
+    height: 500px;
+    position: relative;
+    border: 3px solid rgb(221 142 117);
+    z-index: 1;
+    bottom: 14rem;
+    right: 7rem
+}
+
+.port-link {
+    overflow: hidden;
+    background-color: white;
+    height: 300px;
+}
+
+.port-link .port-photo:hover {
+    transform: scale(1.1);
+    opacity: .75;
+}
+
+
+/* index footer */
+.footer-wrapper {
+    height: 100px;
+    background-color: rgb(238 230 222);
+}
+
+.footer-con {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-con a {
+    margin: auto 10px;
+    font-size: 25px;
+}
+
+.footer-con a:hover {
+    color:rgb(190 132 94);
+    transition: color 150ms linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+    .nav-con {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+        height: 50px;
+        width: 100%;
+        background-color: rgb(238 230 222);
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+    }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+    .mobile-nav #mobile-menu {
+    display: none;
+    background-color: rgba(238, 230, 222, 0.607);
+    width: 100%;
+    position: absolute;
+    top: 3rem;
+    }
+
+    
+  
+  /* Style navigation menu links */
+  .mobile-nav a {
+    color: #1f1f1f;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .mobile-nav .icon {
+    color: #1f1f1f;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+
+  
+  
+
+    
+    
+}
+
