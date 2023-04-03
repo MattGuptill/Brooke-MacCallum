@@ -3,7 +3,8 @@
 }
 
 body {
-    /* background-color: rgb(221 142 117); */
+    max-height: 1080px;
+    height: 100%;
     width: 100%;
     margin: 0;
 }
@@ -19,8 +20,9 @@ html {
     background-color: rgb(238 230 222);
     color: #353535;
     z-index: 999;
-    position: fixed;
+    position: sticky;
     width: 100%;
+    top: 0;
 }
 
 .nav-con {
@@ -34,7 +36,8 @@ html {
 
 .nav-con h1 {
     margin-left: 3rem;
-    font-size: 40px;
+    font-size: 30px;
+    
 }
 
 .nav-items {
@@ -70,7 +73,6 @@ a {
     height: 650px;
     width: 100%;
     position: relative;
-    top: 5rem;
 }
 
 .main-banner {
@@ -92,15 +94,13 @@ a {
     background-image: url(./photos/arches\ \(1\).png);
     background-color: rgb(221 142 117);
     height: 700px;
-  
     position: relative;
-    top: 3rem;
+   
 }
 
 .about-banner {
     display: flex;
     justify-content: space-between;
-    
     height: 700px;
     flex-shrink: 1;
 }
@@ -396,6 +396,7 @@ button {
 .footer-wrapper {
     height: 100px;
     background-color: rgb(238 230 222);
+    z-index: 2;
 }
 
 .footer-con {
@@ -414,6 +415,134 @@ button {
     color:rgb(190 132 94);
     transition: color 150ms linear;
 }
+
+
+/* pricing.html */
+.pricing-wrapper {
+    height: 850px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(./photos/arches.png);
+    background-color: rgb(182 89 76);
+    overflow: hidden;
+}
+
+.pricing-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    height: 65%; 
+    font-size: 2rem;
+    font-family: 'Satisfy', cursive;
+}
+
+.border-box-4 {
+    height: 600px;
+    width: 100%;
+    border: 3px solid rgb(238 230 222);
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    right: 10%
+
+}
+
+.pricing-selection img {
+    width: 250px;
+    height: 250px;
+    transition: all 200ms;
+    
+}
+
+.pricing-selection-con {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    z-index: 2;
+}
+
+.pricing-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    background-color: rgb(221 142 117);
+    width: 325px;
+    height: 600px;
+    border-radius: 15px;
+}
+
+.pricing-selection h2 {
+    background-color: rgb(238 230 222);
+    width: 80%;
+    padding: 8px 0;
+    text-align: center;
+    position: relative;
+    left: 2.75rem;
+    font-size: 1.5rem;
+    z-index: 2;
+}
+
+.pricing-selection p {
+    width: 250px;
+    text-align: center;
+}
+
+.pricing-selection-photo img:hover {
+    transform: scale(1.1);
+    opacity: .75;
+}
+
+
+/* booking html */
+.booking-wrapper {
+    width: 100%;
+    height: 800px;
+    background-color: rgb(144 174 178);
+    background-image: url(./photos/arches.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.booking-con {
+   width: 85%;
+    height: 90%;
+    /* overflow: hidden; */
+}
+
+.booking-img {
+    height: 50%;
+    width: 70%;
+    position: relative;
+    top: 1rem;
+    z-index: 1;
+}
+
+.booking-form-con {
+    width: 500px;
+    height: 650px;
+    background-color: rgb(182 89 76);
+    z-index: 3;
+    position: relative;
+    left: 50%;
+    bottom: 85%
+}
+
+.border-box-5 {
+    border: 3px solid rgb(190 132 94);
+    height: 700px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    bottom: 120%;
+    left: 25%;
+}
+
 
 
 
